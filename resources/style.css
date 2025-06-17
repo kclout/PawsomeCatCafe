@@ -147,7 +147,7 @@ header h2 {
 @media only screen and (max-width: 940px) {
     header {
         padding: 10rem 0 4rem 0;
-        background: no-repeat top/67.5rem 37.5rem url(./PCCBanner.jpg);
+        background: no-repeat top/67.5rem 37.5rem url(./images/PCCBanner.jpg);
     }
 
     .header-content {
