@@ -1,0 +1,500 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: rgb(109, 40, 21);
+}
+
+body {
+    margin: 0;
+}
+
+/* navigation */
+
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid rgb(109, 40, 21);
+    background-color: rgb(226, 197, 189);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 1rem;
+    list-style-type: none;
+}
+
+nav li {
+    display: flex;
+    padding-left: 5%;
+}
+
+nav li:first-child {
+    padding-left: 0;
+}
+
+nav a {
+    font-size: 1.25rem;
+    color: rgb(109, 40, 21);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(202, 155, 141);
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+a.mobile.nav img {
+    width: 2rem;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    nav li {
+        padding-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 750px) { 
+    nav ul {
+        margin: 1rem 0;
+    }
+    
+    nav li {
+        padding-left: 1%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        justify-content: right;
+    }
+    
+    nav a {
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
+
+/* header */
+
+header {
+    padding: 15rem 0;
+    background: no-repeat center url(./images/PCCBanner.jpg);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.header.title-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header img {
+    align-self: top;
+    width: 10rem;
+    height: auto;
+    padding: 0 1% 5% 0;
+}
+
+header h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 6rem;
+    color: rgb(109, 40, 21);
+    text-shadow: -2px 2px rgb(0, 0, 0);
+    margin: 0;
+}
+
+header h2 {
+    position: relative;
+    bottom: 4rem;
+    font-style: italic;
+    margin: 0;
+}
+
+@media only screen and (max-width: 940px) {
+    header {
+        padding: 10rem 0 4rem 0;
+        background: no-repeat top/67.5rem 37.5rem url(./PCCBanner.jpg);
+    }
+
+    .header-content {
+        padding: 1rem 0 3rem 0;
+    }
+    
+    .header.title-container {
+        flex-direction: column;
+    }
+    
+    header img {
+        width: 9rem;
+        padding: 0;
+    }
+    
+    header h1 {
+        font-size: 5rem;
+        text-align: center;
+        line-height: 7rem;
+        width: 100%;
+        height: auto;  
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+        top: 1rem;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header img {
+        width: 7rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+}
+
+/* main */
+
+main h1 {
+    color: rgb(109, 40, 21);
+    text-transform: uppercase;
+}
+
+main p {
+    line-height: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    color:rgb(109, 40, 21);
+    text-align: center;
+    font-weight: bold;
+    margin: 0.15rem 1rem 0;
+    background-color: rgb(226, 197, 189);
+    border-radius: 5px;
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: rgb(202, 155, 141);
+    border: 2px solid rgb(202, 155, 141);
+    border-radius: 20px;
+}
+
+.button:hover {
+    color: rgb(226, 197, 189);
+    background-color: rgb(109, 40, 21);
+    transition: 0.1s;
+}
+
+a {
+    color: rgb(226, 197, 189);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(202, 155, 141);
+    transition: 0.1s;
+}
+
+@media only screen and (max-width: 700px) {
+    main h1 {
+        font-size: 1.75rem;
+    }
+    
+    main p, main figcaption {
+        font-size: 0.875rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+}
+
+/* mission statement */
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    margin: 4rem 0 3rem;
+    background-color: rgb(226, 197, 189);
+}
+
+#mission h1 {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#mission p {
+    text-align: center;
+    color: rgb(109, 40, 21);
+    width: 75%;
+}
+
+/* main flex containers */
+
+.flex-container {
+    display: flex;
+    align-items: start;
+    padding: 1rem;
+    margin: 4rem 3rem;  
+}
+
+.flex-container h1 {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 1.5rem 1.5rem;
+    background-color: rgb(226, 197, 189);
+    border-radius: 10px;
+}
+
+.flex-container p {
+    color: rgb(226, 197, 189);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+.title-container p {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 700px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 8rem 0;
+    }
+
+    .title-container{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* menu */
+
+.menu.flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu.flex-container h1 {
+    margin: 0 1.5rem 1.5rem;
+}
+
+.menu.flex-container p {
+    text-align: center;
+}
+
+.menu.gallery {
+    padding: 0 2rem;
+}
+
+.menu.gallery img {
+    width: 20rem;
+    padding: 2rem 1rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu.flex-container {
+        margin: 4rem 0 8rem;
+    }
+}
+
+/* our cats */
+
+.cats.title-container {
+    margin: 0 2rem;
+}
+
+.cats.title-container h1 {
+    margin: 0 1.5rem 1.5rem 0;
+}
+.cats.title-container p {
+    margin: 0 2rem 0 0;
+}
+
+.cats.button {
+    margin: 2rem;
+}
+
+.cats.flex-container img {
+    width: 18rem;
+    padding: 0 1rem;
+}
+
+.cats.mobile.button {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) { 
+    .cats.title-container {
+        width: 100%;
+    }
+
+    .cats.title-container h1, .cats.title-container p {
+        margin: 0 1.5rem 1.5rem;
+    }
+
+    .cats.mobile.button {
+        display: flex;
+        margin: 2rem 2rem 0;
+    }
+
+    .cats.button {
+        display: none;
+    }
+}
+
+/* our team */
+.team.title-container {
+    width: 50rem;
+}
+
+.team.button {
+    margin: 2rem;
+}
+
+.team.mobile.button {
+    display: none;
+}
+
+.team.gallery {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.team.image-container {
+    width: 33%;
+    min-width: 10rem;
+}
+
+.team.flex-container img {
+    max-width: 100%;
+    padding: 0 1rem;
+}
+
+.team.image-container figcaption {
+    max-width: 100%;
+    padding: 0.2rem 0;
+    margin-bottom: 2rem;
+}
+
+.position {
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 700px) {
+    .team.flex-container {
+        flex-direction: column-reverse;
+        margin: 8rem 0 2rem;
+    }
+
+    .team.title-container {
+        width: 100%;
+    }
+
+    .team.gallery {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .team.image-container {
+        width: 13rem;
+    }
+
+    .team.mobile.button {
+        display: flex;
+        margin: 2rem 2rem 0;
+    }
+
+    .team.button {
+        display: none;
+    }
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 0.875rem;
+}

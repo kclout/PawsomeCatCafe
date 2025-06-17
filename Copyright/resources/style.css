@@ -1,0 +1,153 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: rgb(109, 40, 21);
+}
+
+body {
+    margin: 0;
+}
+
+/* navigation */
+
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid rgb(109, 40, 21);
+    background-color: rgb(226, 197, 189);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 1rem;
+    list-style-type: none;
+}
+
+nav li {
+    display: flex;
+    padding-left: 5%;
+}
+
+nav li:first-child {
+    padding-left: 0;
+}
+
+nav a {
+    font-size: 1.25rem;
+    color: rgb(109, 40, 21);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(202, 155, 141);
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+a.mobile.nav img {
+    width: 2rem;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    nav li {
+        padding-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 750px) { 
+    nav ul {
+        margin: 1rem 0;
+    }
+    
+    nav li {
+        padding-left: 1%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav ul {
+        justify-content: right;
+    }
+    
+    nav a {
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+}
+
+/* main */
+
+main {
+    width: 100%;
+    padding-top: 6rem;
+    margin: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 4rem 3rem;  
+}
+
+.flex-container h1 {
+    color: rgb(109, 40, 21);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin: 0 1.5rem 1.5rem;
+    background-color: rgb(226, 197, 189);
+    border-radius: 10px;
+}
+
+.flex-container p {
+    color: rgb(226, 197, 189);
+    line-height: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: rgb(202, 155, 141);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+@media only screen and (max-width: 700px) {
+    .flex-container h1 {
+        font-size: 1.75rem;
+    }
+    
+    .flex-container p {
+        font-size: 0.875rem;
+    }
+}
+
