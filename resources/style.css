@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-/* navigation */
+/* nav */
 
 nav {
     position: fixed;
@@ -61,41 +61,6 @@ a.mobile.nav img {
     display: none;
 }
 
-@media only screen and (max-width: 850px) {
-    nav li {
-        padding-left: 3%;
-    }
-}
-
-@media only screen and (max-width: 750px) { 
-    nav ul {
-        margin: 1rem 0;
-    }
-    
-    nav li {
-        padding-left: 1%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    nav ul {
-        justify-content: right;
-    }
-    
-    nav a {
-        font-size: 0.8rem;
-        margin: 0 1rem;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: flex;
-    }
-}
-
 /* header */
 
 header {
@@ -142,55 +107,6 @@ header h2 {
     bottom: 4rem;
     font-style: italic;
     margin: 0;
-}
-
-@media only screen and (max-width: 940px) {
-    header {
-        padding: 10rem 0 4rem 0;
-        background: no-repeat top/67.5rem 37.5rem url(./images/PCCBanner.jpg);
-    }
-
-    .header-content {
-        padding: 1rem 0 3rem 0;
-    }
-    
-    .header.title-container {
-        flex-direction: column;
-    }
-    
-    header img {
-        width: 9rem;
-        padding: 0;
-    }
-    
-    header h1 {
-        font-size: 5rem;
-        text-align: center;
-        line-height: 7rem;
-        width: 100%;
-        height: auto;  
-    }
-
-    header h2 {
-        font-size: 1.25rem;
-        top: 1rem;
-        bottom: 0;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    header img {
-        width: 7rem;
-    }
-
-    header h1 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-
-    header h2 {
-        font-size: 1rem;
-    }
 }
 
 /* main */
@@ -246,20 +162,6 @@ a {
 a:hover {
     color: rgb(202, 155, 141);
     transition: 0.1s;
-}
-
-@media only screen and (max-width: 700px) {
-    main h1 {
-        font-size: 1.75rem;
-    }
-    
-    main p, main figcaption {
-        font-size: 0.875rem;
-    }
-
-    .gallery {
-        flex-direction: column;
-    }
 }
 
 /* mission statement */
@@ -326,22 +228,6 @@ a:hover {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 700px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin: 8rem 0;
-    }
-
-    .title-container{
-        width: 100%;
-        margin: 0;
-    }
-}
-
 /* menu */
 
 .menu.flex-container {
@@ -365,12 +251,6 @@ a:hover {
 .menu.gallery img {
     width: 20rem;
     padding: 2rem 1rem 0;
-}
-
-@media only screen and (max-width: 700px) {
-    .menu.flex-container {
-        margin: 4rem 0 8rem;
-    }
 }
 
 /* our cats */
@@ -399,26 +279,8 @@ a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 700px) { 
-    .cats.title-container {
-        width: 100%;
-    }
-
-    .cats.title-container h1, .cats.title-container p {
-        margin: 0 1.5rem 1.5rem;
-    }
-
-    .cats.mobile.button {
-        display: flex;
-        margin: 2rem 2rem 0;
-    }
-
-    .cats.button {
-        display: none;
-    }
-}
-
 /* our team */
+
 .team.title-container {
     width: 50rem;
 }
@@ -457,7 +319,160 @@ a:hover {
     font-weight: normal;
 }
 
-@media only screen and (max-width: 700px) {
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 940px) {
+    header {
+        padding: 10rem 0 4rem 0;
+        background: no-repeat top/67.5rem 37.5rem url(./images/PCCBanner.jpg);
+    }
+
+    .header-content {
+        padding: 1rem 0 3rem 0;
+    }
+    
+    .header.title-container {
+        flex-direction: column;
+    }
+    
+    header img {
+        width: 9rem;
+        padding: 0;
+    }
+    
+    header h1 {
+        font-size: 5rem;
+        text-align: center;
+        line-height: 7rem;
+        width: 100%;
+        height: auto;  
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+        top: 1rem;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    nav li {
+        padding-left: 3%;
+    }
+}
+
+@media only screen and (max-width: 750px) { 
+    nav ul {
+        margin: 1rem 0;
+    }
+    
+    nav li {
+        padding-left: 1%;
+    }
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 500px), only screen and (max-device-height: 500px) and (orientation: landscape) {
+    /* nav */
+
+    nav ul {
+        justify-content: right;
+    }
+    
+    nav a {
+        font-size: 0.8rem;
+        margin: 0 1rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    /* header */
+
+    header img {
+        width: 7rem;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    /* main */
+
+    main h1 {
+        font-size: 1.75rem;
+    }
+    
+    main p, main figcaption {
+        font-size: 0.875rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    /* main flex containers */
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 8rem 0;
+    }
+
+    .title-container{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* menu */
+
+    .menu.flex-container {
+        margin: 4rem 0 8rem;
+    }
+
+    /* our cats */
+
+    .cats.title-container {
+        width: 100%;
+    }
+
+    .cats.title-container h1, .cats.title-container p {
+        margin: 0 1.5rem 1.5rem;
+    }
+
+    .cats.mobile.button {
+        display: flex;
+        margin: 2rem 2rem 0;
+    }
+
+    .cats.button {
+        display: none;
+    }
+
+    /* our team */
+    
     .team.flex-container {
         flex-direction: column-reverse;
         margin: 8rem 0 2rem;
@@ -485,16 +500,4 @@ a:hover {
     .team.button {
         display: none;
     }
-}
-
-/* footer */
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer a {
-    font-size: 0.875rem;
 }
